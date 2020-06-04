@@ -2,8 +2,7 @@ FROM openjdk:13-alpine
 
 ENV PMD_VERSION 6.24.0
 
-RUN apk update && apk upgrade
-RUN apk add --update --no-cache wget unzip curl git
+RUN apk add --update --no-cache wget unzip curl
 RUN mkdir -p /opt
 
 RUN cd /opt \
