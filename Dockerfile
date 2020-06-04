@@ -1,6 +1,7 @@
 FROM openjdk:13-alpine
 
-RUN apk add --update --no-cache wget unzip curl
+RUN apk update && apk upgrade
+RUN apk add --update --no-cache wget unzip curl git
 RUN mkdir -p /opt
 
 RUN cd /opt \
