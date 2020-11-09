@@ -1,4 +1,4 @@
-FROM openjdk:15-alpine
+FROM openjdk:16-alpine
 
 RUN apk update && apk upgrade
 RUN apk add --update --no-cache wget unzip curl git
