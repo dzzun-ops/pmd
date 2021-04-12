@@ -13,7 +13,6 @@ RUN cd /opt \
 COPY pmd /usr/bin/pmd
 COPY cpd /usr/bin/cpd
 RUN chmod +x /usr/bin/pmd /usr/bin/cpd
-RUN /usr/bin/pmd -version
 
 RUN mkdir /src
 VOLUME /src
